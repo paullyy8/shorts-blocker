@@ -1,45 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const toggle = document.getElementById('shortsToggle');
-  
-    // Retrieve the current state from Chrome storage
-    chrome.storage.sync.get(['shortsBlocked'], function (result) {
-      toggle.checked = result.shortsBlocked;
-    });
-  
-    toggle.addEventListener('change', function () {
-      const isBlocked = toggle.checked;
-  
-      // Store the toggle state in Chrome storage
-      chrome.storage.sync.set({ shortsBlocked: isBlocked }, function () {
-        if (isBlocked) {
-          chrome.scripting.executeScript({
-            target: { allFrames: true },
-            function: blockShorts
-          });
-        } else {
-          chrome.scripting.executeScript({
-            target: { allFrames: true },
-            function: unblockShorts
-          });
-        }
-      });
-    });
+// Listen for changes to the toggle button
+document.getElementById('toggle').addEventListener('change', function() {
+  const isEnabled = this.checked;
+
+  // Store the toggle state in Chrome storage
+  chrome.storage.sync.set({ shortsBlocked: isEnabled }, function() {
+      console.log(`YouTube Shorts Blocked: ${isEnabled}`);
   });
-  
-  function blockShorts() {
-    // Logic to block YouTube Shorts goes here
-    const shortsSelectors = [
-      'ytd-grid-video-renderer:has(#video-title:has-text("#shorts"))',
-      'ytd-grid-video-renderer:has([overlay-style="SHORTS"])',
-      'ytd-reel-shelf-renderer:has(.ytd-reel-shelf-renderer:has-text("Shorts"))'
-    ];
-    shortsSelectors.forEach(selector => {
-      document.querySelectorAll(selector).forEach(el => el.remove());
-    });
-  }
-  
-  function unblockShorts() {
-    // Logic to unblock/revert the changes (for simplicity, you may refresh the page)
-    location.reload();
-  }
-  
+
+  // Send a message to the content script to update the Shorts block status
+  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+      chrome.tabs.sendMessage(tabs[0].id, { shortsBlocked: isEnabled });
+  });
+});
+
+// On popup load, check if shorts are currently blocked and set the toggle state
+chrome.storage.sync.get('shortsBlocked', function(data) {
+  document.getElementById('toggle').checked = data.shortsBlocked || false;
+});
