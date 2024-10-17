@@ -1,21 +1,12 @@
 {
   "manifest_version": 3,
   "name": "YouTube Shorts Blocker",
-  "description": "Blocks YouTube Shorts to help you stay focused.",
+  "description": "Blocks YouTube Shorts to help you stay focuseddd.",
+  "author": "Amit Paul & Aaditya Paul",
   "version": "1.0",
-  "permissions": [
-    "storage",
-    "activeTab",
-    "scripting",
-    "tabs"
-  ],
+  "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    }
+    "default_popup": "popup.html"
   },
   "icons": {
     "16": "icons/icon16.png",
@@ -27,7 +18,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*"],
+      "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
       "js": ["content.js"],
       "run_at": "document_end"
     }
