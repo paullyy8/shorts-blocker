@@ -1,4 +1,4 @@
-// This function will hide YouTube Shorts section on the homepage and block /shorts links.
+// Function to hide YouTube Shorts section and block /shorts links
 function blockYouTubeShorts() {
   // Block Shorts links within ytd-video-renderer elements
   const videoRenderers = document.querySelectorAll("ytd-video-renderer");
@@ -12,6 +12,7 @@ function blockYouTubeShorts() {
       videoRenderer.remove();
     }
   });
+
   // Block Shorts section on the homepage.
   const shortsSections = document.querySelectorAll(
     "ytm-shorts-lockup-view-model-v2",
@@ -21,6 +22,24 @@ function blockYouTubeShorts() {
     section.remove();
   });
 }
+
+// Function to enable YouTube Shorts (restore the content)
+function enableYouTubeShorts() {
+  // In case you need to implement restoring content, leave it empty for now
+  // Alternatively, you can reset sections that were removed, but this is complex
+  console.log('YouTube Shorts is enabled again');
+}
+
+// Listen for messages to block or unblock Shorts
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.shortsBlocked) {
+    // Block Shorts when toggle is on
+    blockYouTubeShorts();
+  } else {
+    // Enable Shorts when toggle is off
+    enableYouTubeShorts();
+  }
+});
 
 // Run the function after the page loads.
 window.onload = function () {
@@ -37,5 +56,5 @@ window.onload = function () {
   });
 
   // Start observing changes in the body (childList and subtree for dynamic content).
-  observer.observe(document.body, {childList: true, subtree: true});
+  observer.observe(document.body, { childList: true, subtree: true });
 };
