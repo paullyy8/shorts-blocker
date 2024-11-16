@@ -69,7 +69,7 @@ If you encounter any issues or have suggestions, feel free to [open an issue](ht
 - The extension currently works in **Google Chrome** and any Chromium-based browsers (such as Microsoft Edge).
 - If you run into any issues or bugs, feel free to reach out via GitHub Issues!
 
-### Main Creator
+### Developer
 <p align="center">
   <a href="https://github.com/paullyy8" target="_blank">
     <img src="https://avatars.githubusercontent.com/u/129642624?v=4" alt="paullyy8" width="100" height="100" style="border-radius: 50%; border: 3px solid #5e81ac; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; object-fit: cover;" />
