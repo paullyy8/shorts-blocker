@@ -64,7 +64,7 @@ If you encounter any issues or have suggestions, feel free to [open an issue](ht
 ### Main Creator
 <p align="center">
   <a href="https://github.com/paullyy8" target="_blank">
-    <img src="https://avatars.githubusercontent.com/u/129642624?v=4" alt="paullyy8" width="100" height="100" style="border-radius: 50%; border: 3px solid #5e81ac; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;" />
+    <img src="https://avatars.githubusercontent.com/u/129642624?v=4" alt="paullyy8" width="100" height="100" style="border-radius: 50%; border: 3px solid #5e81ac; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; object-fit: cover;" />
   </a>
   <br>
   <a href="https://github.com/paullyy8" target="_blank" style="font-size: 16px; color: #2e3440; text-decoration: none; font-weight: bold;">paullyy8</a>
@@ -73,11 +73,12 @@ If you encounter any issues or have suggestions, feel free to [open an issue](ht
 ### Contributor
 <p align="center">
   <a href="https://github.com/aaditya-paul" target="_blank">
-    <img src="https://avatars.githubusercontent.com/u/91450480?v=4" alt="aaditya-paul" width="100" height="100" style="border-radius: 50%; border: 3px solid #2e3440; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;" />
+    <img src="https://avatars.githubusercontent.com/u/91450480?v=4" alt="aaditya-paul" width="100" height="100" style="border-radius: 50%; border: 3px solid #2e3440; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; object-fit: cover;" />
   </a>
   <br>
   <a href="https://github.com/aaditya-paul" target="_blank" style="font-size: 16px; color: #2e3440; text-decoration: none; font-weight: bold;">aaditya-paul</a>
 </p>
+
 
 
 ## Ending Note
