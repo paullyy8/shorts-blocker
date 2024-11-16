@@ -1,4 +1,7 @@
-# Shorts Blocker Extension
+<div align="center">
+  <img src="./assets/icons/shorts-blocker-banner.jpg">
+  <h2>Shorts-Blocker</h2>
+</div>
 
 A simple and effective extension to block YouTube Shorts and stay focused on regular content.
 
