@@ -1,18 +1,66 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #d8dee9; /* Soft light grayish-blue background */
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding: 20px;
-  width: 200px;
-  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Fill the full height of the viewport */
 }
 
+/* Container Styles */
+.container {
+  padding: 20px;
+  background-color: #88c0d0; /* Soft Blue for the container */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 250px; /* Width of the container */
+  height: auto;
+}
+
+/* Title Style */
 .title {
   font-size: 24px;
-  color: #4CAF50;  /* Green for active state */
+  color: #2e3440; /* Dark Grayish Blue for title */
+  margin-bottom: 10px;
 }
 
-.quote {
+/* Status Text */
+.status {
   font-size: 16px;
-  margin: 20px 0;
-  color: #333;
+  color: #3b4252; /* Slate Gray for status */
+  margin: 5px 0;
+}
+
+/* Quote Text */
+.quote {
+  font-size: 14px;
+  color: #ffffff; /* White color for the quote */
+  font-style: italic;
+  margin-top: 15px;
+}
+
+/* Footer Style */
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #ffffff; /* White color for footer */
+  font-weight: 400;
+}
+
+/* Button (Optional) */
+button {
+  background-color: #5e81ac; /* Deep Blue for button */
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #81a1c1; /* Muted Blue for hover effect */
 }
