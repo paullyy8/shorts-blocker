@@ -30,14 +30,13 @@ Follow these easy steps to install the **Shorts Blocker** extension on your Chro
 
 - Once installed, the extension will automatically start blocking YouTube Shorts.
 - You'll see a simple UI popup with a status message that tells you the extension is active and working.
-- No need to refresh the page. YouTube Shorts will be blocked as soon as you visit YouTube!
+- **No need to refresh the page.** YouTube Shorts will be blocked as soon as you visit YouTube!
 
 ## **Usage**
 
 - The extension runs automatically as soon as it’s loaded.
 - It will **block YouTube Shorts** content across the site. You do not need to do anything other than install it.
 - If you want to **disable** the blocker temporarily, just remove the extension via the Extensions page (`chrome://extensions`) or disable it.
-
 
 ## **Technical Details**
 
@@ -47,6 +46,12 @@ Follow these easy steps to install the **Shorts Blocker** extension on your Chro
 ## **Contributing**
 
 Feel free to fork the repository, submit issues, and pull requests. We'd love to have your help in improving the extension!
+
+To contribute:
+1. Fork the repository.
+2. Clone your fork locally.
+3. Make your changes and push them.
+4. Submit a pull request to the main repository.
 
 ## **License**
 
@@ -80,7 +85,6 @@ If you encounter any issues or have suggestions, feel free to [open an issue](ht
 </p>
 
 
-
 ## Ending Note
 
 <p align="center">
@@ -88,6 +92,4 @@ If you encounter any issues or have suggestions, feel free to [open an issue](ht
   <em>"Stay focused, block distractions"</em>
 </p>
 
----
-## 
 <h3 align="center">Designed and Developed by <a href="https://bento.me/amit-paul">Amit Paul</a></h3>
